@@ -1,5 +1,6 @@
 package com.brynnexvii.gemcraft;
 
+import com.brynnexvii.gemcraft.block.GCBlocks;
 import com.brynnexvii.gemcraft.item.GCItems;
 import org.slf4j.Logger;
 
@@ -56,6 +57,7 @@ public class GemCraft {
 
         //Deferred Registries
         GCItems.register(modEventBus);
+        GCBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -92,6 +94,37 @@ public class GemCraft {
             event.accept(GCItems.RAW_SMOKY_QUARTZ);
             event.accept(GCItems.RAW_FERBERITE);
             event.accept(GCItems.RAW_ONYX);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
+            event.accept(GCBlocks.IGNIS_GEM_ORE);
+            event.accept(GCBlocks.DEEPSLATE_IGNIS_GEM_ORE);
+            event.accept(GCBlocks.NETHER_IGNIS_GEM_ORE);
+            event.accept(GCBlocks.END_STONE_IGNIS_GEM_ORE);
+            event.accept(GCBlocks.ZEPHYR_GEM_ORE);
+            event.accept(GCBlocks.DEEPSLATE_ZEPHYR_GEM_ORE);
+            event.accept(GCBlocks.NETHER_ZEPHYR_GEM_ORE);
+            event.accept(GCBlocks.END_STONE_ZEPHYR_GEM_ORE);
+            event.accept(GCBlocks.TERRA_GEM_ORE);
+            event.accept(GCBlocks.DEEPSLATE_TERRA_GEM_ORE);
+            event.accept(GCBlocks.NETHER_TERRA_GEM_ORE);
+            event.accept(GCBlocks.END_STONE_TERRA_GEM_ORE);
+            event.accept(GCBlocks.MIZU_GEM_ORE);
+            event.accept(GCBlocks.DEEPSLATE_MIZU_GEM_ORE);
+            event.accept(GCBlocks.NETHER_MIZU_GEM_ORE);
+            event.accept(GCBlocks.END_STONE_MIZU_GEM_ORE);
+            event.accept(GCBlocks.AETHER_GEM_ORE);
+            event.accept(GCBlocks.DEEPSLATE_AETHER_GEM_ORE);
+            event.accept(GCBlocks.NETHER_AETHER_GEM_ORE);
+            event.accept(GCBlocks.END_STONE_AETHER_GEM_ORE);
+            event.accept(GCBlocks.LYS_GEM_ORE);
+            event.accept(GCBlocks.DEEPSLATE_LYS_GEM_ORE);
+            event.accept(GCBlocks.NETHER_LYS_GEM_ORE);
+            event.accept(GCBlocks.END_STONE_LYS_GEM_ORE);
+            event.accept(GCBlocks.INANIS_GEM_ORE);
+            event.accept(GCBlocks.DEEPSLATE_INANIS_GEM_ORE);
+            event.accept(GCBlocks.NETHER_INANIS_GEM_ORE);
+            event.accept(GCBlocks.END_STONE_INANIS_GEM_ORE);
         }
     }
 
