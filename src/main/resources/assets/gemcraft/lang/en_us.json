@@ -1,5 +1,23 @@
 {
-  "itemGroup.examplemod": "Example Mod Tab",
-  "block.examplemod.example_block": "Example Block",
-  "item.examplemod.example_item": "Example Item"
+  "item.gemcraft.raw_garnet": "Raw Garnet",
+  "item.gemcraft.raw_sphalerite": "Raw Sphalerite",
+  "item.gemcraft.raw_ruby": "Raw Ruby",
+  "item.gemcraft.raw_golden_beryl": "Raw Golden Beryl",
+  "item.gemcraft.raw_citrine": "Raw Citrine",
+  "item.gemcraft.raw_topaz": "Raw Topaz",
+  "item.gemcraft.raw_jade": "Raw Jade",
+  "item.gemcraft.raw_peridot": "Raw Peridot",
+  "item.gemcraft.raw_emerald": "Raw Emerald",
+  "item.gemcraft.raw_aquamarine": "Raw Aquamarine",
+  "item.gemcraft.raw_iolite": "Raw Iolite",
+  "item.gemcraft.raw_sapphire": "Raw Sapphire",
+  "item.gemcraft.raw_amethyst": "Raw Amethyst",
+  "item.gemcraft.raw_charoite": "Raw Charoite",
+  "item.gemcraft.raw_tanzanite": "Raw Tanzanite",
+  "item.gemcraft.raw_albite": "Raw Albite",
+  "item.gemcraft.raw_dendritic_opal": "Raw Dendritic Opal",
+  "item.gemcraft.raw_diamond": "Raw Diamond",
+  "item.gemcraft.raw_smoky_quartz": "Raw Smoky Quartz",
+  "item.gemcraft.raw_ferberite": "Raw Ferberite",
+  "item.gemcraft.raw_onyx": "Raw Onyx"
 }

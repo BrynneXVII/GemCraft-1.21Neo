@@ -1,5 +1,6 @@
 package com.brynnexvii.gemcraft;
 
+import com.brynnexvii.gemcraft.item.GCItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -35,10 +36,10 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(GemCraft.MODID)
+@Mod(GemCraft.MOD_ID)
 public class GemCraft {
 
-    public static final String MODID = "gemcraft";
+    public static final String MOD_ID = "gemcraft";
     private static final Logger LOGGER = LogUtils.getLogger();
 
 
@@ -53,6 +54,9 @@ public class GemCraft {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        //Deferred Registries
+        GCItems.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -66,7 +70,29 @@ public class GemCraft {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(GCItems.RAW_GARNET);
+            event.accept(GCItems.RAW_SPHALERITE);
+            event.accept(GCItems.RAW_RUBY);
+            event.accept(GCItems.RAW_GOLDEN_BERYL);
+            event.accept(GCItems.RAW_CITRINE);
+            event.accept(GCItems.RAW_TOPAZ);
+            event.accept(GCItems.RAW_JADE);
+            event.accept(GCItems.RAW_PERIDOT);
+            event.accept(GCItems.RAW_EMERALD);
+            event.accept(GCItems.RAW_AQUAMARINE);
+            event.accept(GCItems.RAW_IOLITE);
+            event.accept(GCItems.RAW_SAPPHIRE);
+            event.accept(GCItems.RAW_AMETHYST);
+            event.accept(GCItems.RAW_CHAROITE);
+            event.accept(GCItems.RAW_TANZANITE);
+            event.accept(GCItems.RAW_ALBITE);
+            event.accept(GCItems.RAW_DENDRITIC_OPAL);
+            event.accept(GCItems.RAW_DIAMOND);
+            event.accept(GCItems.RAW_SMOKY_QUARTZ);
+            event.accept(GCItems.RAW_FERBERITE);
+            event.accept(GCItems.RAW_ONYX);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -76,7 +102,7 @@ public class GemCraft {
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
