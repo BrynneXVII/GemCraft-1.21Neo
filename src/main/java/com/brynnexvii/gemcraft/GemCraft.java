@@ -1,6 +1,7 @@
 package com.brynnexvii.gemcraft;
 
 import com.brynnexvii.gemcraft.block.GCBlocks;
+import com.brynnexvii.gemcraft.item.GCCreativeModeTabs;
 import com.brynnexvii.gemcraft.item.GCItems;
 import org.slf4j.Logger;
 
@@ -56,6 +57,8 @@ public class GemCraft {
         NeoForge.EVENT_BUS.register(this);
 
         //Deferred Registries
+        GCCreativeModeTabs.register(modEventBus);
+
         GCItems.register(modEventBus);
         GCBlocks.register(modEventBus);
 
