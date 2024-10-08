@@ -70,6 +70,9 @@ public class GCCreativeModeTabs {
                         output.accept(GCItems.RAW_SMOKY_QUARTZ);
                         output.accept(GCItems.RAW_FERBERITE);
                         output.accept(GCItems.RAW_ONYX);
+
+                        output.accept(GCItems.MINT_LEAVES);
+                        output.accept(GCItems.MINT_SEEDS);
                     }).build());
 
     public static final Supplier<CreativeModeTab> GEM_TAB = CREATIVE_MODE_TABS.register("gem_tab",

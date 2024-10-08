@@ -1,9 +1,11 @@
 package com.brynnexvii.gemcraft.item;
 
 import com.brynnexvii.gemcraft.GemCraft;
+import com.brynnexvii.gemcraft.block.GCBlocks;
 import com.brynnexvii.gemcraft.utility.enums.GCAspect;
 import com.brynnexvii.gemcraft.utility.enums.GCRarity;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -48,6 +50,9 @@ public class GCItems {
     public static final DeferredItem<Item>  RAW_FERBERITE = ITEMS.register("raw_ferberite", () -> new GCAspectedItem(new Item.Properties(), GCRarity.UNCOMMON, GCAspect.INANIS));
     public static final DeferredItem<Item>  RAW_ONYX = ITEMS.register("raw_onyx", () -> new GCAspectedItem(new Item.Properties(), GCRarity.RARE, GCAspect.INANIS));
 
+    //Herbs
+    public static final DeferredItem<Item> MINT_LEAVES = ITEMS.register("mint_leaves", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> MINT_SEEDS = ITEMS.register("mint_seeds", () -> new ItemNameBlockItem(GCBlocks.MINT_HERB_BUSH.get(), new Item.Properties()));
 
 
 

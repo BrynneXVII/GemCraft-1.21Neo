@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "gemcraft:block/mint_herb_bush_stage0"
+    },
+    "age=1": {
+      "model": "gemcraft:block/mint_herb_bush_stage1"
+    },
+    "age=2": {
+      "model": "gemcraft:block/mint_herb_bush_stage2"
+    }
+  }
+}
