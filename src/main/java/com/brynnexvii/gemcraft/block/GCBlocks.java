@@ -303,6 +303,25 @@ public class GCBlocks {
                             .pushReaction(PushReaction.DESTROY)
             ));
 
+    //Metals
+    public static final DeferredBlock<Block> ARCHAIC_REMNANT = registerBlock("archaic_remnant",
+            () -> new Block(
+                    BlockBehaviour.Properties.of()
+                        .mapColor(MapColor.SAND)
+                        .requiresCorrectToolForDrops()
+                        .strength(45.0F, 1200.0F)
+                        .sound(SoundType.ANCIENT_DEBRIS)
+            ));
+
+    public static final DeferredBlock<Block> ENDIREN_BLOCK = registerBlock("endiren_block",
+            () -> new Block(
+                    BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.SAND)
+                            .requiresCorrectToolForDrops()
+                            .strength(60.0F, 1200.0F)
+                            .sound(SoundType.NETHERITE_BLOCK)
+            ));
+
 
 
     //Helper Methods

@@ -71,6 +71,11 @@ public class GCCreativeModeTabs {
                         output.accept(GCItems.RAW_FERBERITE);
                         output.accept(GCItems.RAW_ONYX);
 
+                        output.accept(GCBlocks.ARCHAIC_REMNANT);
+                        output.accept(GCItems.ENDIREN_FRAGMENT);
+                        output.accept(GCItems.ENDIREN_INGOT);
+                        output.accept(GCBlocks.ENDIREN_BLOCK);
+
                         output.accept(GCItems.MINT_LEAVES);
                         output.accept(GCItems.MINT_SEEDS);
                     }).build());

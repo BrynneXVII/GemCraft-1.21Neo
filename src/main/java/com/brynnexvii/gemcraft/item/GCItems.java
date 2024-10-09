@@ -54,6 +54,10 @@ public class GCItems {
     public static final DeferredItem<Item> MINT_LEAVES = ITEMS.register("mint_leaves", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> MINT_SEEDS = ITEMS.register("mint_seeds", () -> new ItemNameBlockItem(GCBlocks.MINT_HERB_BUSH.get(), new Item.Properties()));
 
+    //Metals
+    public static final DeferredItem<Item> ENDIREN_FRAGMENT = ITEMS.register("endiren_fragment", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ENDIREN_INGOT = ITEMS.register("endiren_ingot", () -> new Item(new Item.Properties()));
+
 
 
 
