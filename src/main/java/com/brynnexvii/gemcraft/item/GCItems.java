@@ -57,6 +57,9 @@ public class GCItems {
     //Metals
     public static final DeferredItem<Item> ENDIREN_FRAGMENT = ITEMS.register("endiren_fragment", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ENDIREN_INGOT = ITEMS.register("endiren_ingot", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ENDIREN_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("endiren_upgrade_smithing_template", () -> new Item(new Item.Properties())); // this should be more like SmithingTemplateItem.createNetheriteUpgradeTemplate() but obviously need to change the latter portion, but its a method in a class
+
+    //Armor Stuff
 
 
 

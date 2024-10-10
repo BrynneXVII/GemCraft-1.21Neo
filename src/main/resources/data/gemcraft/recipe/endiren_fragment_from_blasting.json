@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 4.0,
+  "ingredient": {
+    "item": "gemcraft:archaic_remnant"
+  },
+  "result": {
+    "id": "gemcraft:endiren_fragment"
+  }
+}

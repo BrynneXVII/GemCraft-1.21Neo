@@ -75,6 +75,7 @@ public class GCCreativeModeTabs {
                         output.accept(GCItems.ENDIREN_FRAGMENT);
                         output.accept(GCItems.ENDIREN_INGOT);
                         output.accept(GCBlocks.ENDIREN_BLOCK);
+                        output.accept(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE);
 
                         output.accept(GCItems.MINT_LEAVES);
                         output.accept(GCItems.MINT_SEEDS);

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "endiren_ingot",
+  "key": {
+    "E": {
+      "item": "gemcraft:endiren_fragment"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "P": {
+      "item": "minecraft:ender_pearl"
+    }
+  },
+  "pattern": [
+    "EPE",
+    "PDP",
+    "EPE"
+  ],
+  "result": {
+    "count": 1,
+    "id": "gemcraft:endiren_ingot"
+  }
+}
