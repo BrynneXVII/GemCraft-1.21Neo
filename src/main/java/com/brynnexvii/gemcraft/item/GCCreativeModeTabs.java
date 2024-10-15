@@ -77,6 +77,12 @@ public class GCCreativeModeTabs {
                         output.accept(GCBlocks.ENDIREN_BLOCK);
                         output.accept(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE);
 
+                        output.accept(GCItems.ENDIREN_SWORD);
+                        output.accept(GCItems.ENDIREN_PICKAXE);
+                        output.accept(GCItems.ENDIREN_AXE);
+                        output.accept(GCItems.ENDIREN_SHOVEL);
+                        output.accept(GCItems.ENDIREN_HOE);
+
                         output.accept(GCItems.MINT_LEAVES);
                         output.accept(GCItems.MINT_SEEDS);
                     }).build());

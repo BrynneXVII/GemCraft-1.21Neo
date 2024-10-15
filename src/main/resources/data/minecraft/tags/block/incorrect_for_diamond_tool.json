@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#gemcraft:needs_netherite_tool",
+    "#gemcraft:needs_endiren_tool"
+  ]
+}

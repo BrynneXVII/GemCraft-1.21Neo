@@ -82,6 +82,14 @@ public class GemCraft {
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
             //event.accept(GCBlocks.IGNIS_GEM_ORE);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
+            event.accept(GCItems.ENDIREN_SWORD);
+            event.accept(GCItems.ENDIREN_PICKAXE);
+            event.accept(GCItems.ENDIREN_AXE);
+            event.accept(GCItems.ENDIREN_SHOVEL);
+            event.accept(GCItems.ENDIREN_HOE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

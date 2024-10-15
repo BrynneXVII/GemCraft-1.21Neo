@@ -4,8 +4,7 @@ import com.brynnexvii.gemcraft.GemCraft;
 import com.brynnexvii.gemcraft.block.GCBlocks;
 import com.brynnexvii.gemcraft.utility.enums.GCAspect;
 import com.brynnexvii.gemcraft.utility.enums.GCRarity;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -60,6 +59,13 @@ public class GCItems {
     public static final DeferredItem<Item> ENDIREN_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("endiren_upgrade_smithing_template", () -> new Item(new Item.Properties())); // this should be more like SmithingTemplateItem.createNetheriteUpgradeTemplate() but obviously need to change the latter portion, but its a method in a class
 
     //Armor Stuff
+
+    //Tools
+    public static final  DeferredItem<Item> ENDIREN_SWORD = ITEMS.register("endiren_sword", () -> new SwordItem(GCToolTiers.ENDIREN, new Item.Properties().attributes(SwordItem.createAttributes(GCToolTiers.ENDIREN, 3F, -2.4F))));
+    public static final  DeferredItem<Item> ENDIREN_PICKAXE = ITEMS.register("endiren_pickaxe", () -> new PickaxeItem(GCToolTiers.ENDIREN, new Item.Properties().attributes(PickaxeItem.createAttributes(GCToolTiers.ENDIREN, 1F, -2.8F))));
+    public static final  DeferredItem<Item> ENDIREN_AXE = ITEMS.register("endiren_axe", () -> new AxeItem(GCToolTiers.ENDIREN, new Item.Properties().attributes(AxeItem.createAttributes(GCToolTiers.ENDIREN, 6F, -3.0F))));
+    public static final  DeferredItem<Item> ENDIREN_SHOVEL = ITEMS.register("endiren_shovel", () -> new ShovelItem(GCToolTiers.ENDIREN, new Item.Properties().attributes(ShovelItem.createAttributes(GCToolTiers.ENDIREN, 1.5F, -3F))));
+    public static final  DeferredItem<Item> ENDIREN_HOE = ITEMS.register("endiren_hoe", () -> new HoeItem(GCToolTiers.ENDIREN, new Item.Properties().attributes(HoeItem.createAttributes(GCToolTiers.ENDIREN, -4F, 0F))));
 
 
 
