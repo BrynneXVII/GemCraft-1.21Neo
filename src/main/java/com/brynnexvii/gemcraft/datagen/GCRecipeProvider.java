@@ -6,6 +6,7 @@ import com.brynnexvii.gemcraft.item.GCItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -52,6 +53,15 @@ public class GCRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .define('S', GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get())
                 .unlockedBy("has_endiren_upgrade_smithing_template", has(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get())).save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, GCItems.ARCHAIC_SMITHING_TEMPLATE.get())
+                .pattern("#S#")
+                .pattern("#C#")
+                .pattern("###")
+                .define('#', Items.DIAMOND)
+                .define('C', Items.END_STONE)
+                .define('S', GCItems.ARCHAIC_SMITHING_TEMPLATE.get())
+                .unlockedBy("has_archaic_armor_trim_smithing_template", has(GCItems.ARCHAIC_SMITHING_TEMPLATE.get())).save(pRecipeOutput);
+
         SmithingTransformRecipeBuilder.smithing(
                         Ingredient.of(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get()),
                         Ingredient.of(Items.NETHERITE_HELMET),
@@ -59,7 +69,7 @@ public class GCRecipeProvider extends RecipeProvider implements IConditionBuilde
                         RecipeCategory.COMBAT,
                         GCItems.ENDIREN_HELMET.get())
                 .unlocks("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get()))
-                .save(pRecipeOutput, "gemcraft:endiren_helmet");
+                .save(pRecipeOutput, ResourceLocation.fromNamespaceAndPath(GemCraft.MOD_ID,"endiren_helmet"));
         SmithingTransformRecipeBuilder.smithing(
                         Ingredient.of(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get()),
                         Ingredient.of(Items.NETHERITE_CHESTPLATE),
@@ -67,7 +77,7 @@ public class GCRecipeProvider extends RecipeProvider implements IConditionBuilde
                         RecipeCategory.COMBAT,
                         GCItems.ENDIREN_CHESTPLATE.get())
                 .unlocks("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get()))
-                .save(pRecipeOutput, "gemcraft:endiren_chestplate");
+                .save(pRecipeOutput, ResourceLocation.fromNamespaceAndPath(GemCraft.MOD_ID,"endiren_chestplate"));
         SmithingTransformRecipeBuilder.smithing(
                         Ingredient.of(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get()),
                         Ingredient.of(Items.NETHERITE_LEGGINGS),
@@ -75,7 +85,7 @@ public class GCRecipeProvider extends RecipeProvider implements IConditionBuilde
                         RecipeCategory.COMBAT,
                         GCItems.ENDIREN_LEGGINGS.get())
                 .unlocks("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get()))
-                .save(pRecipeOutput, "gemcraft:endiren_leggings");
+                .save(pRecipeOutput, ResourceLocation.fromNamespaceAndPath(GemCraft.MOD_ID,"endiren_leggings"));
         SmithingTransformRecipeBuilder.smithing(
                         Ingredient.of(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get()),
                         Ingredient.of(Items.NETHERITE_BOOTS),
@@ -83,7 +93,7 @@ public class GCRecipeProvider extends RecipeProvider implements IConditionBuilde
                         RecipeCategory.COMBAT,
                         GCItems.ENDIREN_BOOTS.get())
                 .unlocks("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get()))
-                .save(pRecipeOutput, "gemcraft:endiren_boots");
+                .save(pRecipeOutput, ResourceLocation.fromNamespaceAndPath(GemCraft.MOD_ID,"endiren_boots"));
         SmithingTransformRecipeBuilder.smithing(
                         Ingredient.of(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get()),
                         Ingredient.of(Items.NETHERITE_SWORD),
@@ -91,7 +101,7 @@ public class GCRecipeProvider extends RecipeProvider implements IConditionBuilde
                         RecipeCategory.COMBAT,
                         GCItems.ENDIREN_SWORD.get())
                 .unlocks("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get()))
-                .save(pRecipeOutput, "gemcraft:endiren_sword");
+                .save(pRecipeOutput, ResourceLocation.fromNamespaceAndPath(GemCraft.MOD_ID,"endiren_sword"));
         SmithingTransformRecipeBuilder.smithing(
                         Ingredient.of(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get()),
                         Ingredient.of(Items.NETHERITE_PICKAXE),
@@ -99,7 +109,7 @@ public class GCRecipeProvider extends RecipeProvider implements IConditionBuilde
                         RecipeCategory.COMBAT,
                         GCItems.ENDIREN_PICKAXE.get())
                 .unlocks("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get()))
-                .save(pRecipeOutput, "gemcraft:endiren_pickaxe");
+                .save(pRecipeOutput, ResourceLocation.fromNamespaceAndPath(GemCraft.MOD_ID,"endiren_pickaxe"));
         SmithingTransformRecipeBuilder.smithing(
                         Ingredient.of(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get()),
                         Ingredient.of(Items.NETHERITE_AXE),
@@ -107,7 +117,7 @@ public class GCRecipeProvider extends RecipeProvider implements IConditionBuilde
                         RecipeCategory.COMBAT,
                         GCItems.ENDIREN_AXE.get())
                 .unlocks("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get()))
-                .save(pRecipeOutput, "gemcraft:endiren_axe");
+                .save(pRecipeOutput, ResourceLocation.fromNamespaceAndPath(GemCraft.MOD_ID,"endiren_axe"));
         SmithingTransformRecipeBuilder.smithing(
                         Ingredient.of(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get()),
                         Ingredient.of(Items.NETHERITE_SHOVEL),
@@ -115,7 +125,7 @@ public class GCRecipeProvider extends RecipeProvider implements IConditionBuilde
                         RecipeCategory.COMBAT,
                         GCItems.ENDIREN_SHOVEL.get())
                 .unlocks("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get()))
-                .save(pRecipeOutput, "gemcraft:endiren_shovel");
+                .save(pRecipeOutput, ResourceLocation.fromNamespaceAndPath(GemCraft.MOD_ID,"endiren_shovel"));
         SmithingTransformRecipeBuilder.smithing(
                         Ingredient.of(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get()),
                         Ingredient.of(Items.NETHERITE_HOE),
@@ -123,7 +133,9 @@ public class GCRecipeProvider extends RecipeProvider implements IConditionBuilde
                         RecipeCategory.COMBAT,
                         GCItems.ENDIREN_HOE.get())
                 .unlocks("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get()))
-                .save(pRecipeOutput, "gemcraft:endiren_hoe");
+                .save(pRecipeOutput, ResourceLocation.fromNamespaceAndPath(GemCraft.MOD_ID,"endiren_hoe"));
+
+        trimSmithing(pRecipeOutput, GCItems.ARCHAIC_SMITHING_TEMPLATE.get(), ResourceLocation.fromNamespaceAndPath(GemCraft.MOD_ID, "archaic"));
 
         oreBlasting(pRecipeOutput, List.of(GCBlocks.ARCHAIC_REMNANT), RecipeCategory.MISC, GCItems.ENDIREN_FRAGMENT.get(), 4.0f, 200, "endiren_fragment");
     }

@@ -76,6 +76,7 @@ public class GCCreativeModeTabs {
                         output.accept(GCItems.ENDIREN_INGOT);
                         output.accept(GCBlocks.ENDIREN_BLOCK);
                         output.accept(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE);
+                        output.accept(GCItems.ARCHAIC_SMITHING_TEMPLATE);
 
                         output.accept(GCItems.ENDIREN_SWORD);
                         output.accept(GCItems.ENDIREN_PICKAXE);

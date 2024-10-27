@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-27T00:14:16.1171142	Recipes
+// 1.21.1	2024-10-27T16:49:06.1208761	Recipes
 a9e00c73f75fbb9f1a42c1cc360e5d17d63697a8 data/gemcraft/advancement/recipes/building_blocks/endiren_block.json
 bc765199d1dcd320b0c9d6c32abb7ffec0b8b7c4 data/gemcraft/advancement/recipes/combat/endiren_axe.json
 42c6d34c28801ff647ca27e808b5c45ed51a7219 data/gemcraft/advancement/recipes/combat/endiren_boots.json
@@ -9,10 +9,14 @@ e71e003823f0392fce22cae24d74f2e9e642e3df data/gemcraft/advancement/recipes/comba
 4d8d5e622917fb93f28554a3bf2da52ec658005a data/gemcraft/advancement/recipes/combat/endiren_pickaxe.json
 32ad31f8835abcac1c14b96e201f54146de9aaa8 data/gemcraft/advancement/recipes/combat/endiren_shovel.json
 d05e42320856dfca41f84294341cc65afc5c2335 data/gemcraft/advancement/recipes/combat/endiren_sword.json
+bc6dfbdbe39bb3f1bbf8691558b740e45d03a5da data/gemcraft/advancement/recipes/misc/archaic.json
+11825b23d835e033e0a086f918f110534fa2c488 data/gemcraft/advancement/recipes/misc/archaic_armor_trim_smithing_template.json
 e4029ff68d32133bbd7edf24016d8add08faec9b data/gemcraft/advancement/recipes/misc/endiren_fragment_from_blasting_archaic_remnant.json
 f8e12c7f22f700f7a79763f48492eb95ec4ffcf7 data/gemcraft/advancement/recipes/misc/endiren_ingot.json
 c536b94ad0848e1e61973dbde601af9f620bb224 data/gemcraft/advancement/recipes/misc/endiren_ingot_from_endiren_block.json
 77b6dedb57ac3f8e3b1279468def642cd2c3c4a9 data/gemcraft/advancement/recipes/misc/endiren_upgrade_smithing_template.json
+16429f91fdcdbeeef4f31e64543d21fdad5da8b8 data/gemcraft/recipe/archaic.json
+3350e7ff88c009b6e0470d63b8963bc12e7a96e9 data/gemcraft/recipe/archaic_armor_trim_smithing_template.json
 c445a5947d4a270fbb5a6bace6c761a296ce763b data/gemcraft/recipe/endiren_axe.json
 9f49e15f6781e6c909192e9d507c1c9819602480 data/gemcraft/recipe/endiren_block.json
 1a03bf363f52d02f119b23caab5c3f7afa57d374 data/gemcraft/recipe/endiren_boots.json

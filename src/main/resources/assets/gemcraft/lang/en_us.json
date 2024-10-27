@@ -26,6 +26,11 @@
 
   "item.gemcraft.endiren_fragment": "Endiren Fragment",
   "item.gemcraft.endiren_ingot": "Endiren Ingot",
+
+  "item.gemcraft.archaic_armor_trim_smithing_template": "Archaic Trim Template",
+  "trim_pattern.gemcraft.archaic": "Archaic Armor Trim",
+  "trim_material.gemcraft.endiren": "Endiren Material",
+
   "item.gemcraft.endiren_upgrade_smithing_template": "Endiren Upgrade Smithing Template",
   "item.gemcraft.smithing_template.endiren_upgrade.additions_slot_description": "Add Endiren Ingot",
   "item.gemcraft.smithing_template.endiren_upgrade.applies_to": "Netherite Equipment",

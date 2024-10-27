@@ -1,2 +1,4 @@
-// 1.21.1	2024-10-27T14:13:16.1651533	Tags for minecraft:item mod id gemcraft
+// 1.21.1	2024-10-27T16:49:06.1238792	Tags for minecraft:item mod id gemcraft
 488b92f7011a4e6d12518e42862267387f7bcc4b data/minecraft/tags/item/trimmable_armor.json
+8b6b5443e47932714614403887c98e4ab15c19b1 data/minecraft/tags/item/trim_materials.json
+d6df2751d9eb21106d867cd0cd518b94b6af0cfb data/minecraft/tags/item/trim_templates.json

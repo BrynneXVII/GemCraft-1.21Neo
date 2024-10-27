@@ -4,6 +4,7 @@ import com.brynnexvii.gemcraft.GemCraft;
 import com.brynnexvii.gemcraft.block.GCBlocks;
 import com.brynnexvii.gemcraft.utility.enums.GCAspect;
 import com.brynnexvii.gemcraft.utility.enums.GCRarity;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -56,7 +57,10 @@ public class GCItems {
     //Metals
     public static final DeferredItem<Item> ENDIREN_FRAGMENT = ITEMS.register("endiren_fragment", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ENDIREN_INGOT = ITEMS.register("endiren_ingot", () -> new Item(new Item.Properties()));
+
+    //Template
     public static final DeferredItem<Item> ENDIREN_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("endiren_upgrade_smithing_template", GCSmithingTemplateItem::createEndirenUpgradeTemplate);
+    public static final DeferredItem<Item> ARCHAIC_SMITHING_TEMPLATE = ITEMS.register("archaic_armor_trim_smithing_template", () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(GemCraft.MOD_ID, "archaic")));
 
     //Armor Stuff
     public static final DeferredItem<Item> ENDIREN_BOOTS = ITEMS.register("endiren_boots", () -> new ArmorItem(GCArmorMaterials.ENDIREN, ArmorItem.Type.BOOTS,

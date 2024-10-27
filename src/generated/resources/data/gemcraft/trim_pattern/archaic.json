@@ -1,0 +1,8 @@
+{
+  "asset_id": "gemcraft:archaic",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.gemcraft.archaic"
+  },
+  "template_item": "gemcraft:archaic_armor_trim_smithing_template"
+}

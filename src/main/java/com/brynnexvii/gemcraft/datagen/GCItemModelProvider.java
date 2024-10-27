@@ -67,6 +67,8 @@ public class GCItemModelProvider extends ItemModelProvider {
         basicItem(GCItems.ENDIREN_FRAGMENT.get());
         basicItem(GCItems.ENDIREN_INGOT.get());
         basicItem(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get());
+        basicItem(GCItems.ARCHAIC_SMITHING_TEMPLATE.get());
+
         trimmableArmorItem(GCItems.ENDIREN_BOOTS);
         trimmableArmorItem(GCItems.ENDIREN_LEGGINGS);
         trimmableArmorItem(GCItems.ENDIREN_CHESTPLATE);

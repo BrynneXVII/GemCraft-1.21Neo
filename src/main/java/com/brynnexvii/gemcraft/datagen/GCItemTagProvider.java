@@ -7,6 +7,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 
@@ -25,5 +26,11 @@ public class GCItemTagProvider extends ItemTagsProvider {
                 .add(GCItems.ENDIREN_CHESTPLATE.get())
                 .add(GCItems.ENDIREN_LEGGINGS.get())
                 .add(GCItems.ENDIREN_BOOTS.get());
+
+        this.tag(ItemTags.TRIM_MATERIALS)
+                .add(GCItems.ENDIREN_INGOT.get());
+
+        this.tag(ItemTags.TRIM_TEMPLATES) //does not need upgrade templates
+                .add(GCItems.ARCHAIC_SMITHING_TEMPLATE.get());
     }
 }
