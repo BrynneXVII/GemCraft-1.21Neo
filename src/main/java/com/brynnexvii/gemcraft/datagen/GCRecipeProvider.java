@@ -52,6 +52,79 @@ public class GCRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .define('S', GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get())
                 .unlockedBy("has_endiren_upgrade_smithing_template", has(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get())).save(pRecipeOutput);
 
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.NETHERITE_HELMET),
+                        Ingredient.of(GCItems.ENDIREN_INGOT.get()),
+                        RecipeCategory.COMBAT,
+                        GCItems.ENDIREN_HELMET.get())
+                .unlocks("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get()))
+                .save(pRecipeOutput, "gemcraft:endiren_helmet");
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.NETHERITE_CHESTPLATE),
+                        Ingredient.of(GCItems.ENDIREN_INGOT.get()),
+                        RecipeCategory.COMBAT,
+                        GCItems.ENDIREN_CHESTPLATE.get())
+                .unlocks("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get()))
+                .save(pRecipeOutput, "gemcraft:endiren_chestplate");
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.NETHERITE_LEGGINGS),
+                        Ingredient.of(GCItems.ENDIREN_INGOT.get()),
+                        RecipeCategory.COMBAT,
+                        GCItems.ENDIREN_LEGGINGS.get())
+                .unlocks("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get()))
+                .save(pRecipeOutput, "gemcraft:endiren_leggings");
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.NETHERITE_BOOTS),
+                        Ingredient.of(GCItems.ENDIREN_INGOT.get()),
+                        RecipeCategory.COMBAT,
+                        GCItems.ENDIREN_BOOTS.get())
+                .unlocks("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get()))
+                .save(pRecipeOutput, "gemcraft:endiren_boots");
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.NETHERITE_SWORD),
+                        Ingredient.of(GCItems.ENDIREN_INGOT.get()),
+                        RecipeCategory.COMBAT,
+                        GCItems.ENDIREN_SWORD.get())
+                .unlocks("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get()))
+                .save(pRecipeOutput, "gemcraft:endiren_sword");
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.NETHERITE_PICKAXE),
+                        Ingredient.of(GCItems.ENDIREN_INGOT.get()),
+                        RecipeCategory.COMBAT,
+                        GCItems.ENDIREN_PICKAXE.get())
+                .unlocks("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get()))
+                .save(pRecipeOutput, "gemcraft:endiren_pickaxe");
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.NETHERITE_AXE),
+                        Ingredient.of(GCItems.ENDIREN_INGOT.get()),
+                        RecipeCategory.COMBAT,
+                        GCItems.ENDIREN_AXE.get())
+                .unlocks("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get()))
+                .save(pRecipeOutput, "gemcraft:endiren_axe");
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.NETHERITE_SHOVEL),
+                        Ingredient.of(GCItems.ENDIREN_INGOT.get()),
+                        RecipeCategory.COMBAT,
+                        GCItems.ENDIREN_SHOVEL.get())
+                .unlocks("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get()))
+                .save(pRecipeOutput, "gemcraft:endiren_shovel");
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(GCItems.ENDIREN_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(Items.NETHERITE_HOE),
+                        Ingredient.of(GCItems.ENDIREN_INGOT.get()),
+                        RecipeCategory.COMBAT,
+                        GCItems.ENDIREN_HOE.get())
+                .unlocks("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get()))
+                .save(pRecipeOutput, "gemcraft:endiren_hoe");
+
         oreBlasting(pRecipeOutput, List.of(GCBlocks.ARCHAIC_REMNANT), RecipeCategory.MISC, GCItems.ENDIREN_FRAGMENT.get(), 4.0f, 200, "endiren_fragment");
     }
 

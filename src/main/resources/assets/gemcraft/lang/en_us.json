@@ -27,6 +27,11 @@
   "item.gemcraft.endiren_fragment": "Endiren Fragment",
   "item.gemcraft.endiren_ingot": "Endiren Ingot",
   "item.gemcraft.endiren_upgrade_smithing_template": "Endiren Upgrade Smithing Template",
+  "item.gemcraft.smithing_template.endiren_upgrade.additions_slot_description": "Add Endiren Ingot",
+  "item.gemcraft.smithing_template.endiren_upgrade.applies_to": "Netherite Equipment",
+  "item.gemcraft.smithing_template.endiren_upgrade.base_slot_description": "Add netherite armor, weapon, or tool",
+  "item.gemcraft.smithing_template.endiren_upgrade.ingredients": "Endiren Ingot",
+  "upgrade.gemcraft.endiren_upgrade": "Endiren Upgrade",
 
   "item.gemcraft.endiren_helmet": "Endiren Helmet",
   "item.gemcraft.endiren_chestplate": "Endiren Chestplate",

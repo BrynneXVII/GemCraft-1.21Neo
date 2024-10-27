@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_endiren_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gemcraft:endiren_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "gemcraft:endiren_shovel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_endiren_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "gemcraft:endiren_shovel"
+    ]
+  }
+}

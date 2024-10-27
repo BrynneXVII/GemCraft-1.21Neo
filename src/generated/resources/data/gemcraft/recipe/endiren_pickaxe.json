@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "gemcraft:endiren_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_pickaxe"
+  },
+  "result": {
+    "count": 1,
+    "id": "gemcraft:endiren_pickaxe"
+  },
+  "template": {
+    "item": "gemcraft:endiren_upgrade_smithing_template"
+  }
+}
