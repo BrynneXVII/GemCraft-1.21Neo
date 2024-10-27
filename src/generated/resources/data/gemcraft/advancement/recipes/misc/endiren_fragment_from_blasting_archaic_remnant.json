@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_archaic_remnant": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gemcraft:archaic_remnant"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "gemcraft:endiren_fragment_from_blasting_archaic_remnant"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_archaic_remnant"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "gemcraft:endiren_fragment_from_blasting_archaic_remnant"
+    ]
+  }
+}

@@ -41,7 +41,7 @@ public class GCBlockLootTableProvider extends BlockLootSubProvider {
         //Loot Tables
         dropSelf(GCBlocks.ARCHAIC_REMNANT.get());
         dropSelf(GCBlocks.ENDIREN_BLOCK.get());
-        createCropDrops(GCBlocks.MINT_HERB_BUSH.get(), GCItems.MINT_LEAVES.get(), GCItems.MINT_SEEDS.get(), MintLootItemConditionBuilder); //may not be the right loot table that I want for the herb bushes... this is not the berry bush loot table, but mint has needs not just fruit
+        this.add(GCBlocks.MINT_HERB_BUSH.get(), createCropDrops(GCBlocks.MINT_HERB_BUSH.get(), GCItems.MINT_LEAVES.get(), GCItems.MINT_SEEDS.get(), MintLootItemConditionBuilder)); //may not be the right loot table that I want for the herb bushes... this is not the berry bush loot table, but mint has needs not just fruit
 
         oreWithRarityDrops(GCBlocks.IGNIS_GEM_ORE.get(), GCItems.RAW_GARNET.get(), GCItems.RAW_SPHALERITE.get(), GCItems.RAW_RUBY.get(), GCMiningStoneType.STONE);
         oreWithRarityDrops(GCBlocks.DEEPSLATE_IGNIS_GEM_ORE.get(), GCItems.RAW_GARNET.get(), GCItems.RAW_SPHALERITE.get(), GCItems.RAW_RUBY.get(), GCMiningStoneType.DEEPSLATE);
@@ -59,10 +59,10 @@ public class GCBlockLootTableProvider extends BlockLootSubProvider {
         oreWithRarityDrops(GCBlocks.DEEPSLATE_MIZU_GEM_ORE.get(), GCItems.RAW_AQUAMARINE.get(), GCItems.RAW_IOLITE.get(), GCItems.RAW_SAPPHIRE.get(), GCMiningStoneType.DEEPSLATE);
         oreWithRarityDrops(GCBlocks.NETHER_MIZU_GEM_ORE.get(), GCItems.RAW_AQUAMARINE.get(), GCItems.RAW_IOLITE.get(), GCItems.RAW_SAPPHIRE.get(), GCMiningStoneType.NETHER);
         oreWithRarityDrops(GCBlocks.END_STONE_MIZU_GEM_ORE.get(), GCItems.RAW_AQUAMARINE.get(), GCItems.RAW_IOLITE.get(), GCItems.RAW_SAPPHIRE.get(), GCMiningStoneType.END_STONE);
-        //oreWithRarityDrops(GCBlocks.AETHER_GEM_ORE.get(), GCItems.RAW_AMETHYST.get(), GCItems.RAW_CHAROITE.get(), GCItems.RAW_TANZANITE.get(), GCMiningStoneType.STONE);
-        //oreWithRarityDrops(GCBlocks.DEEPSLATE_AETHER_GEM_ORE.get(), GCItems.RAW_AMETHYST.get(), GCItems.RAW_CHAROITE.get(), GCItems.RAW_TANZANITE.get(), GCMiningStoneType.DEEPSLATE);
-        //oreWithRarityDrops(GCBlocks.NETHER_AETHER_GEM_ORE.get(), GCItems.RAW_AMETHYST.get(), GCItems.RAW_CHAROITE.get(), GCItems.RAW_TANZANITE.get(), GCMiningStoneType.NETHER);
-        //oreWithRarityDrops(GCBlocks.END_STONE_AETHER_GEM_ORE.get(), GCItems.RAW_AMETHYST.get(), GCItems.RAW_CHAROITE.get(), GCItems.RAW_TANZANITE.get(), GCMiningStoneType.END_STONE);
+        oreWithRarityDrops(GCBlocks.AETHER_GEM_ORE.get(), GCItems.RAW_AMETHYST.get(), GCItems.RAW_CHAROITE.get(), GCItems.RAW_TANZANITE.get(), GCMiningStoneType.STONE);
+        oreWithRarityDrops(GCBlocks.DEEPSLATE_AETHER_GEM_ORE.get(), GCItems.RAW_AMETHYST.get(), GCItems.RAW_CHAROITE.get(), GCItems.RAW_TANZANITE.get(), GCMiningStoneType.DEEPSLATE);
+        oreWithRarityDrops(GCBlocks.NETHER_AETHER_GEM_ORE.get(), GCItems.RAW_AMETHYST.get(), GCItems.RAW_CHAROITE.get(), GCItems.RAW_TANZANITE.get(), GCMiningStoneType.NETHER);
+        oreWithRarityDrops(GCBlocks.END_STONE_AETHER_GEM_ORE.get(), GCItems.RAW_AMETHYST.get(), GCItems.RAW_CHAROITE.get(), GCItems.RAW_TANZANITE.get(), GCMiningStoneType.END_STONE);
         oreWithRarityDrops(GCBlocks.LYS_GEM_ORE.get(), GCItems.RAW_ALBITE.get(), GCItems.RAW_DENDRITIC_OPAL.get(), GCItems.RAW_DIAMOND.get(), GCMiningStoneType.STONE);
         oreWithRarityDrops(GCBlocks.DEEPSLATE_LYS_GEM_ORE.get(), GCItems.RAW_ALBITE.get(), GCItems.RAW_DENDRITIC_OPAL.get(), GCItems.RAW_DIAMOND.get(), GCMiningStoneType.DEEPSLATE);
         oreWithRarityDrops(GCBlocks.NETHER_LYS_GEM_ORE.get(), GCItems.RAW_ALBITE.get(), GCItems.RAW_DENDRITIC_OPAL.get(), GCItems.RAW_DIAMOND.get(), GCMiningStoneType.NETHER);
@@ -155,6 +155,7 @@ public class GCBlockLootTableProvider extends BlockLootSubProvider {
                 break;
 
             default:
+                dropSelf(block);
         }
 
     }

@@ -1,0 +1,9 @@
+// 1.21.1	2024-10-26T23:17:15.0616621	Tags for minecraft:block mod id gemcraft
+256d1abec57617774a077aae01ac3f9fb6f8152e data/gemcraft/tags/block/incorrect_for_endiren_tool.json
+edd8d0d95a113d4039ec6e81f5abaa9218927e71 data/gemcraft/tags/block/needs_endiren_tool.json
+354e709cf1c087d7007102a90f15f74fbca56af5 data/gemcraft/tags/block/needs_netherite_tool.json
+2e4c388e05e7a6a4581dbc530e58070f6be6a6a9 data/minecraft/tags/block/incorrect_for_diamond_tool.json
+2e4c388e05e7a6a4581dbc530e58070f6be6a6a9 data/minecraft/tags/block/incorrect_for_iron_tool.json
+8b7f7c706ec2282694643cb453ae8e5b6c6d2e9d data/minecraft/tags/block/incorrect_for_netherite_tool.json
+2b174cecdb70ae9331d7cd939e22e72a94b02e48 data/minecraft/tags/block/mineable/pickaxe.json
+559d2f81e1d55cd8edbe8c9633e173393743a6c3 data/minecraft/tags/block/needs_diamond_tool.json

@@ -30,9 +30,9 @@ public class GCRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .define('#', GCItems.ENDIREN_INGOT.get())
                 .unlockedBy("has_endiren_ingot", has(GCItems.ENDIREN_INGOT.get())).save(pRecipeOutput);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, GCItems.ENDIREN_INGOT, 4)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, GCItems.ENDIREN_INGOT.get(), 4)
                 .requires(GCBlocks.ENDIREN_BLOCK.get())
-                .unlockedBy("has_endiren_block", has(GCBlocks.ENDIREN_BLOCK.get())).save(pRecipeOutput);
+                .unlockedBy("has_endiren_block", has(GCBlocks.ENDIREN_BLOCK.get())).save(pRecipeOutput, "gemcraft:endiren_ingot_from_endiren_block");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, GCItems.ENDIREN_INGOT.get())
                 .pattern("EPE")

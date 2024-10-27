@@ -1,0 +1,9 @@
+{
+  "remove": [
+    "#gemcraft:needs_endiren_tool"
+  ],
+  "values": [
+    "#gemcraft:needs_netherite_tool",
+    "#minecraft:needs_diamond_tool"
+  ]
+}
