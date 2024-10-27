@@ -63,7 +63,7 @@ public class GCItems {
             new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(45))));
     public static final DeferredItem<Item> ENDIREN_LEGGINGS = ITEMS.register("endiren_leggings", () -> new ArmorItem(GCArmorMaterials.ENDIREN, ArmorItem.Type.LEGGINGS,
             new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(45))));
-    public static final DeferredItem<Item> ENDIREN_CHESTPLATE = ITEMS.register("endiren_chestplate", () -> new ArmorItem(GCArmorMaterials.ENDIREN, ArmorItem.Type.CHESTPLATE,
+    public static final DeferredItem<Item> ENDIREN_CHESTPLATE = ITEMS.register("endiren_chestplate", () -> new GCArmorItem(GCArmorMaterials.ENDIREN, ArmorItem.Type.CHESTPLATE, //only 1 needs to be the mod armor Item type to get the bonus, only doing it on the one will reduce the ticking method calls
             new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(45))));
     public static final DeferredItem<Item> ENDIREN_HELMET = ITEMS.register("endiren_helmet", () -> new ArmorItem(GCArmorMaterials.ENDIREN, ArmorItem.Type.HELMET,
             new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(45))));

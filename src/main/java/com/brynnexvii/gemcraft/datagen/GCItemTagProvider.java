@@ -1,9 +1,11 @@
 package com.brynnexvii.gemcraft.datagen;
 
 import com.brynnexvii.gemcraft.GemCraft;
+import com.brynnexvii.gemcraft.item.GCItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -18,6 +20,10 @@ public class GCItemTagProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(GCItems.ENDIREN_HELMET.get())
+                .add(GCItems.ENDIREN_CHESTPLATE.get())
+                .add(GCItems.ENDIREN_LEGGINGS.get())
+                .add(GCItems.ENDIREN_BOOTS.get());
     }
 }
