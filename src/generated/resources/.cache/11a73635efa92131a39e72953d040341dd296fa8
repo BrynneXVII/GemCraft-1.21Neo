@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-27T14:13:16.1613989	Item Models: gemcraft
+// 1.21.1	2024-10-27T14:29:30.9081044	Item Models: gemcraft
 a4aa971f4b9e6e48653bf06cea66bc8dc4d13758 assets/gemcraft/models/item/endiren_axe.json
 f69cb99794824e89bcf019e5a4a384749346ee4b assets/gemcraft/models/item/endiren_boots.json
 15644006486ee8caf76f52c3e861369bafacc9d9 assets/gemcraft/models/item/endiren_boots_amethyst_trim.json
@@ -35,6 +35,7 @@ c586c5dea3d09d7219e5a3e961a0a51a682bbbd0 assets/gemcraft/models/item/endiren_hel
 c5762f2bed8851c24db9bb07726288fef2a748bb assets/gemcraft/models/item/endiren_helmet_quartz_trim.json
 b01e7bb07042916292496c4f9cc4170a4d171a4a assets/gemcraft/models/item/endiren_helmet_redstone_trim.json
 5b283ec290b59b01e5c798b71e52948906581438 assets/gemcraft/models/item/endiren_hoe.json
+5f9e3e5df45a9c3442dd3f1c1ac5b255cda78fcb assets/gemcraft/models/item/endiren_horse_armor.json
 c303bd495a9731aea4694968f68e0f4259fb6f35 assets/gemcraft/models/item/endiren_ingot.json
 da3fb9f43b6b9eca5c6bbe89cb8b0fc861749943 assets/gemcraft/models/item/endiren_leggings.json
 a527bfed60fee14b3a663570a279a388021db4f8 assets/gemcraft/models/item/endiren_leggings_amethyst_trim.json

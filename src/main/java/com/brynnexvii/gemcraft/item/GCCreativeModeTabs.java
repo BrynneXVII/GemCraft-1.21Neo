@@ -87,6 +87,7 @@ public class GCCreativeModeTabs {
                         output.accept(GCItems.ENDIREN_CHESTPLATE);
                         output.accept(GCItems.ENDIREN_LEGGINGS);
                         output.accept(GCItems.ENDIREN_BOOTS);
+                        output.accept(GCItems.ENDIREN_HORSE_ARMOR);
 
                         output.accept(GCItems.MINT_LEAVES);
                         output.accept(GCItems.MINT_SEEDS);

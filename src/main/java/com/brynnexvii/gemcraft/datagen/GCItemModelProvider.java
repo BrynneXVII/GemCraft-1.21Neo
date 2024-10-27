@@ -71,6 +71,7 @@ public class GCItemModelProvider extends ItemModelProvider {
         trimmableArmorItem(GCItems.ENDIREN_LEGGINGS);
         trimmableArmorItem(GCItems.ENDIREN_CHESTPLATE);
         trimmableArmorItem(GCItems.ENDIREN_HELMET);
+        basicItem(GCItems.ENDIREN_HORSE_ARMOR.get());
 
         handheldItem(GCItems.ENDIREN_SWORD);
         handheldItem(GCItems.ENDIREN_PICKAXE);

@@ -56,7 +56,7 @@ public class GCItems {
     //Metals
     public static final DeferredItem<Item> ENDIREN_FRAGMENT = ITEMS.register("endiren_fragment", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ENDIREN_INGOT = ITEMS.register("endiren_ingot", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> ENDIREN_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("endiren_upgrade_smithing_template", GCSmithingTemplateItem::createEndirenUpgradeTemplate); // this should be more like SmithingTemplateItem.createNetheriteUpgradeTemplate() but obviously need to change the latter portion, but its a method in a class
+    public static final DeferredItem<Item> ENDIREN_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("endiren_upgrade_smithing_template", GCSmithingTemplateItem::createEndirenUpgradeTemplate);
 
     //Armor Stuff
     public static final DeferredItem<Item> ENDIREN_BOOTS = ITEMS.register("endiren_boots", () -> new ArmorItem(GCArmorMaterials.ENDIREN, ArmorItem.Type.BOOTS,
@@ -67,6 +67,8 @@ public class GCItems {
             new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(45))));
     public static final DeferredItem<Item> ENDIREN_HELMET = ITEMS.register("endiren_helmet", () -> new ArmorItem(GCArmorMaterials.ENDIREN, ArmorItem.Type.HELMET,
             new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(45))));
+
+    public static final DeferredItem<Item> ENDIREN_HORSE_ARMOR = ITEMS.register("endiren_horse_armor", () -> new AnimalArmorItem(GCArmorMaterials.ENDIREN, AnimalArmorItem.BodyType.EQUESTRIAN, false, new Item.Properties().stacksTo(16))); //yes horse armor only stacks to one but that sucks so....
 
     //Tools
     public static final  DeferredItem<Item> ENDIREN_SWORD = ITEMS.register("endiren_sword", () -> new SwordItem(GCToolTiers.ENDIREN, new Item.Properties().attributes(SwordItem.createAttributes(GCToolTiers.ENDIREN, 3F, -2.4F))));
