@@ -21,6 +21,8 @@ public class GCTags {
     }
 
     public static class Items {
+
+
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(GemCraft.MOD_ID, name));
         }

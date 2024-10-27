@@ -126,4 +126,12 @@ public class GCHerbBushBlock extends BushBlock implements BonemealableBlock {
         int i = Math.min(2, state.getValue(AGE) + 1);
         level.setBlock(pos, state.setValue(AGE, Integer.valueOf(i)), 2);
     }
+
+    public int getMaxAge () {
+        return MAX_AGE;
+    }
+
+    public IntegerProperty getAge () {
+        return AGE;
+    }
 }

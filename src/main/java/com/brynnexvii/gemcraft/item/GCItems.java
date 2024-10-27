@@ -59,6 +59,14 @@ public class GCItems {
     public static final DeferredItem<Item> ENDIREN_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("endiren_upgrade_smithing_template", () -> new Item(new Item.Properties())); // this should be more like SmithingTemplateItem.createNetheriteUpgradeTemplate() but obviously need to change the latter portion, but its a method in a class
 
     //Armor Stuff
+    public static final DeferredItem<Item> ENDIREN_BOOTS = ITEMS.register("endiren_boots", () -> new ArmorItem(GCArmorMaterials.ENDIREN, ArmorItem.Type.BOOTS,
+            new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(45))));
+    public static final DeferredItem<Item> ENDIREN_LEGGINGS = ITEMS.register("endiren_leggings", () -> new ArmorItem(GCArmorMaterials.ENDIREN, ArmorItem.Type.LEGGINGS,
+            new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(45))));
+    public static final DeferredItem<Item> ENDIREN_CHESTPLATE = ITEMS.register("endiren_chestplate", () -> new ArmorItem(GCArmorMaterials.ENDIREN, ArmorItem.Type.CHESTPLATE,
+            new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(45))));
+    public static final DeferredItem<Item> ENDIREN_HELMET = ITEMS.register("endiren_helmet", () -> new ArmorItem(GCArmorMaterials.ENDIREN, ArmorItem.Type.HELMET,
+            new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(45))));
 
     //Tools
     public static final  DeferredItem<Item> ENDIREN_SWORD = ITEMS.register("endiren_sword", () -> new SwordItem(GCToolTiers.ENDIREN, new Item.Properties().attributes(SwordItem.createAttributes(GCToolTiers.ENDIREN, 3F, -2.4F))));

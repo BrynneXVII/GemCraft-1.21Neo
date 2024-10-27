@@ -1,6 +1,7 @@
 package com.brynnexvii.gemcraft;
 
 import com.brynnexvii.gemcraft.block.GCBlocks;
+import com.brynnexvii.gemcraft.item.GCArmorMaterials;
 import com.brynnexvii.gemcraft.item.GCCreativeModeTabs;
 import com.brynnexvii.gemcraft.item.GCItems;
 import org.slf4j.Logger;
@@ -62,6 +63,8 @@ public class GemCraft {
         GCItems.register(modEventBus);
         GCBlocks.register(modEventBus);
 
+        GCArmorMaterials.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -89,6 +92,13 @@ public class GemCraft {
             event.accept(GCItems.ENDIREN_AXE);
             event.accept(GCItems.ENDIREN_SHOVEL);
             event.accept(GCItems.ENDIREN_HOE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.COMBAT){
+            event.accept(GCItems.ENDIREN_HELMET);
+            event.accept(GCItems.ENDIREN_CHESTPLATE);
+            event.accept(GCItems.ENDIREN_LEGGINGS);
+            event.accept(GCItems.ENDIREN_BOOTS);
         }
     }
 
