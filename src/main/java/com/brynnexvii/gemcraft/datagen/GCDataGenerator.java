@@ -38,5 +38,7 @@ public class GCDataGenerator {
         generator.addProvider(event.includeClient(), new GCBlockStateProvider(packOutput, existingFileHelper));
 
         generator.addProvider(event.includeServer(), new GCDatapackProvider(packOutput, lookupProvider));
+
+        generator.addProvider(event.includeServer(), new GCWorldGenProvider(packOutput, lookupProvider));
     }
 }
