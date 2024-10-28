@@ -23,9 +23,6 @@ public class GCConfiguredFeatures {
     //start with ConfFeat (what does feat look like) -> then turn to PlacedFeat (how is it placed? How many, on ground, height) -> then describe placement in BiomeModifiers (in which biomes are they placed)
     //Notably, they are called in the reverse order so biome tries to gen, looks to what gets placed, which looks to what the config is
 
-    //Structures
-    public static final ResourceKey<ConfiguredFeature<?, ?>> LOG_DWELLING_KEY = registerKey("log_dwelling_key");
-
     //Ores
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_IGNIS_GEM_ORE_KEY = registerKey("ignis_gem_ore_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ZEPHYR_GEM_ORE_KEY = registerKey("zephyr_gem_ore_key");
@@ -53,8 +50,6 @@ public class GCConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> ARCHAIC_REMNANT_KEY = registerKey("archaic_remnant_key");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
-        //Structures
-        //register(context, LOG_DWELLING_KEY, );
 
         //Ores
         RuleTest stoneReplacables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
