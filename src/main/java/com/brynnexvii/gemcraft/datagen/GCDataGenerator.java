@@ -33,6 +33,7 @@ public class GCDataGenerator {
         BlockTagsProvider blockTagsProvider = new GCBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
         generator.addProvider(event.includeServer(), blockTagsProvider);
         generator.addProvider(event.includeServer(), new GCItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
+        generator.addProvider(event.includeServer(), new GCStructureTagProvider(packOutput, lookupProvider, existingFileHelper));
 
         generator.addProvider(event.includeClient(), new GCItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new GCBlockStateProvider(packOutput, existingFileHelper));

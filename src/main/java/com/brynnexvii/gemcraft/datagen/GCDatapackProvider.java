@@ -20,4 +20,9 @@ public class GCDatapackProvider extends DatapackBuiltinEntriesProvider {
     public GCDatapackProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER, Set.of(GemCraft.MOD_ID));
     }
+
+    @Override
+    public String getName() {
+        return "Gemcraft Datapack Provider";
+    }
 }

@@ -25,4 +25,9 @@ public class GCWorldGenProvider extends DatapackBuiltinEntriesProvider {
     public GCWorldGenProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER,Set.of(GemCraft.MOD_ID));
     }
+
+    @Override
+    public String getName() {
+        return "Gemcraft World Gen Provider";
+    }
 }
