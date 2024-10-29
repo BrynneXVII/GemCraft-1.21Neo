@@ -5,18 +5,19 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.placement.PlacementModifier;
+import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
 
 public class GCPlacedFeatures {
     //Structures
+    public static final ResourceKey<PlacedFeature> LITTLE_BROWN_MUSHROOM_PLACED_KEY = registerKey("little_brown_mushroom_placed");
+    public static final ResourceKey<PlacedFeature> LITTLE_RED_MUSHROOM_PLACED_KEY = registerKey("little_red_mushroom_placed");
 
     //Ores
     public static final ResourceKey<PlacedFeature> OVERWORLD_IGNIS_GEM_ORE_PLACED_KEY = registerKey("ignis_gem_ore_placed");
@@ -47,6 +48,16 @@ public class GCPlacedFeatures {
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE); //go find the ConfigFeats
         //Structures
+        register(context, LITTLE_BROWN_MUSHROOM_PLACED_KEY, configuredFeatures.getOrThrow(GCConfiguredFeatures.LITTLE_BROWN_MUSHROOM_KEY), List.of(
+                RarityFilter.onAverageOnceEvery(16),
+                InSquarePlacement.spread(),
+                PlacementUtils.HEIGHTMAP,
+                BiomeFilter.biome()));
+        register(context, LITTLE_RED_MUSHROOM_PLACED_KEY, configuredFeatures.getOrThrow(GCConfiguredFeatures.LITTLE_RED_MUSHROOM_KEY), List.of(
+                RarityFilter.onAverageOnceEvery(32),
+                InSquarePlacement.spread(),
+                PlacementUtils.HEIGHTMAP,
+                BiomeFilter.biome()));
 
         //Ores
         //general base distr of ores, will almost certainly have to duplicate some things to add more of certain types to appropriate biomes etc (if I still want to do that)

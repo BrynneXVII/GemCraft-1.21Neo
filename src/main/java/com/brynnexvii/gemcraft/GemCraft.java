@@ -4,6 +4,7 @@ import com.brynnexvii.gemcraft.block.GCBlocks;
 import com.brynnexvii.gemcraft.item.GCArmorMaterials;
 import com.brynnexvii.gemcraft.item.GCCreativeModeTabs;
 import com.brynnexvii.gemcraft.item.GCItems;
+import com.brynnexvii.gemcraft.worldgen.GCFeatures;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -64,6 +65,7 @@ public class GemCraft {
         GCBlocks.register(modEventBus);
 
         GCArmorMaterials.register(modEventBus);
+        GCFeatures.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

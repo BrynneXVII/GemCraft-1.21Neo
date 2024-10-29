@@ -2,6 +2,7 @@ package com.brynnexvii.gemcraft.worldgen;
 
 import com.brynnexvii.gemcraft.GemCraft;
 import com.brynnexvii.gemcraft.block.GCBlocks;
+import com.brynnexvii.gemcraft.worldgen.small_structure_features.LittleMushroomFeature;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
@@ -12,6 +13,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
@@ -22,6 +24,10 @@ import java.util.List;
 public class GCConfiguredFeatures {
     //start with ConfFeat (what does feat look like) -> then turn to PlacedFeat (how is it placed? How many, on ground, height) -> then describe placement in BiomeModifiers (in which biomes are they placed)
     //Notably, they are called in the reverse order so biome tries to gen, looks to what gets placed, which looks to what the config is
+
+    //Small Structures
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LITTLE_BROWN_MUSHROOM_KEY = registerKey("little_brown_mushroom_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LITTLE_RED_MUSHROOM_KEY = registerKey("little_red_mushroom_key");
 
     //Ores
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_IGNIS_GEM_ORE_KEY = registerKey("ignis_gem_ore_key");
@@ -50,6 +56,9 @@ public class GCConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> ARCHAIC_REMNANT_KEY = registerKey("archaic_remnant_key");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
+        //Small Structures
+        register(context, LITTLE_BROWN_MUSHROOM_KEY, GCFeatures.LITTLE_BROWN_MUSHROOM.get(), new NoneFeatureConfiguration());
+        register(context, LITTLE_RED_MUSHROOM_KEY, GCFeatures.LITTLE_RED_MUSHROOM.get(), new NoneFeatureConfiguration());
 
         //Ores
         RuleTest stoneReplacables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);

@@ -7,6 +7,7 @@ import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
+import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.neoforged.neoforge.common.world.BiomeModifier;
 import net.neoforged.neoforge.common.world.BiomeModifiers;
@@ -15,6 +16,8 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 public class GCBiomeModifiers {
 
     //Structures
+    public static final ResourceKey<BiomeModifier> ADD_LITTLE_BROWN_MUSHROOM = registerKey("add_little_brown_mushroom");
+    public static final ResourceKey<BiomeModifier> ADD_LITTLE_RED_MUSHROOM = registerKey("add_little_red_mushroom");
 
     //Ores
     public static final ResourceKey<BiomeModifier> ADD_OVERWORLD_IGNIS_GEM_ORES = registerKey("add_ignis_gem_ores");
@@ -47,6 +50,14 @@ public class GCBiomeModifiers {
         var biomes = context.lookup(Registries.BIOME);
 
         //Structures
+        context.register(ADD_LITTLE_BROWN_MUSHROOM, new BiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.DARK_FOREST), biomes.getOrThrow(Biomes.MUSHROOM_FIELDS)),
+                HolderSet.direct(placedFeatures.getOrThrow(GCPlacedFeatures.LITTLE_BROWN_MUSHROOM_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+        context.register(ADD_LITTLE_RED_MUSHROOM, new BiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.DARK_FOREST), biomes.getOrThrow(Biomes.MUSHROOM_FIELDS)),
+                HolderSet.direct(placedFeatures.getOrThrow(GCPlacedFeatures.LITTLE_RED_MUSHROOM_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
 
         //Ores
         //for a single biome or list of biomes HolderSet.direct(biomes.getOrThrow(Biomes.XXX), ..., biomes.getOrThrow(Biomes.XXX))

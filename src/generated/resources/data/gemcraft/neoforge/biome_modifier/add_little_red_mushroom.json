@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "minecraft:dark_forest",
+    "minecraft:mushroom_fields"
+  ],
+  "features": "gemcraft:little_red_mushroom_placed",
+  "step": "vegetal_decoration"
+}
